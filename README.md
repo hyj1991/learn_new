@@ -1,4 +1,3 @@
-[![Package Quality](http://npm.packagequality.com/shield/v8-cpu-analysis.svg)](http://packagequality.com/#?package=v8-cpu-analysis)
 # 每天掌握一个新知识点
 
 * 2017.3.3：
@@ -24,4 +23,11 @@
 
 * 2017.3.11~3.12: 周末私事未学习
 
-* 2017.3.13：定位编写的c++扩展模块运行偶尔会出现 **Check failed: AllowJavascriptExecution::IsAllowed(isolate).** 的错误。
+* 2017.3.13：
+	* 1.定位编写的c++扩展模块运行偶尔会出现 **Check failed: AllowJavascriptExecution::IsAllowed(isolate).** 的错误。
+
+* 2017.3.14：
+    * 1.基本判断出了问题所在，signal和alarm误用，扩展中注册到c++扩展中的js函数执行前忘记使用 ```Nan::TryCatch``` 做保护，以及最关键的是 ```child_process.spawn``` 调用中出现异常导致子进程挂掉，而父进程中依旧维持了IPC管道通信，导致出现核心错误。
+    * 2.了解了JIT技术，以及编译器生成汇编的原理，文章参考如下：
+    	* [JavaScript Just-in-time (JIT) 工作原理](https://zhuanlan.zhihu.com/p/25669120)
+    	* [编译器如何生成汇编](https://zhuanlan.zhihu.com/p/25718411)
