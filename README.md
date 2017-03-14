@@ -1,3 +1,4 @@
+[![Package Quality](http://npm.packagequality.com/shield/v8-cpu-analysis.svg)](http://packagequality.com/#?package=v8-cpu-analysis)
 # 每天掌握一个新知识点
 
 * 2017.3.3：
@@ -22,3 +23,5 @@
 	* 1.研究了在regexp的贪婪匹配模式下，长正则运算时v8提供的cpu-profiler时不时无法正常工作的原因，尚未找到结果
 
 * 2017.3.11~3.12: 周末私事未学习
+
+* 2017.3.13：定位编写的c++扩展模块运行偶尔会出现 **Check failed: AllowJavascriptExecution::IsAllowed(isolate).** 的错误。
