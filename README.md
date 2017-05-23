@@ -66,3 +66,5 @@
 * 2017.4.15 ~ 2017.4.16: 休息日私事
 * ... 省略 N 天
 * 2017.5.3: 开始学习Vue.js相关内容
+* 2017.5.4 - 2017.5.22: 学习了前端的知识，在此基础上用 vue 重构了项目
+* 2017.5.23: 找到一个非常好的讲解 Node 中 stream 部分的文章: https://github.com/zoubin/streamify-your-node-program
